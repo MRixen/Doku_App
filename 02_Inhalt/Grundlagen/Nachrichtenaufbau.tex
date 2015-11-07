@@ -9,19 +9,20 @@ Nachricht = :\{command\}:\{message\};
 Bei der Standardkommunikation sind für \{command\} folgende Parameter bereits 
 fest vergeben:
 
-\{0...n-1\}: Machine data mit n aus $\mathbb{N}$ \\
-Dieser Parameter kann erweitert werden. Hierbei muss die App (Android), als 
-auch das Modul (ABB) angeasst werden.
+\textbf{\{0...n-1\}:} Machine data mit n aus $\mathbb{N}$ \\
+Dieser Parameter kann erweitert werden. Hierbei muss die App (Android - Klasse 
+MachineData), als 
+auch das Modul (ABB - Modul MachineData) angeasst werden.
 
-\{l\}: Logging \\
+\textbf{\{l\}: Logging} \\
 
 \{c1\}: Cycle time (Aktueller Wert)\\
 \{c2\}: Cycle time (Durchschnittswert)\\
 Diese Parameter können erweitert werden mit z.B. \{c3\}, \{c4\}, etc.
 
-\{e\}: Events\\
+\textbf{\{e\}: Event}s\\
 
-\{p\}: Ping\\
+\textbf{\{p\}: Ping}\\
 Dieser Parameter wird zur Überprüfung verwendet, ob der Empfänger noch 
 vorhanden ist. Dies wird in \ref{sec:ChapterABB} erläutert.
 
