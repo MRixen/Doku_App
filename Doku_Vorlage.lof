@@ -2,20 +2,21 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Startscreen}}{17}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Tab Machine Data}}{17}{figure.caption.5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Tab Events}}{18}{figure.caption.6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Tab Logging}}{19}{figure.caption.7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Tab Cycle Time}}{19}{figure.caption.8}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces App Icon}}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Icon Meldungstext Information}}{20}{figure.caption.10}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Icon Meldungstext Warnung}}{20}{figure.caption.11}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Icon Meldungstext Fehler}}{20}{figure.caption.12}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Task und Modul ServerComm}}{21}{figure.caption.13}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Task und Modul EventMessages}}{22}{figure.caption.14}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Task und Modul MachineData}}{22}{figure.caption.15}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Task und Modul CycleTimer}}{23}{figure.caption.16}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Automatic loading}}{23}{figure.caption.17}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Signale hinzuf\IeC {\"u}gen}}{23}{figure.caption.18}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Global.sys}}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Startscreen}}{18}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tab Machine Data}}{18}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tab Events}}{19}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Tab Logging}}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Tab Cycle Time}}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces App Icon}}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Icon Meldungstext Information}}{21}{figure.caption.11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Icon Meldungstext Warnung}}{21}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Icon Meldungstext Fehler}}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Task und Modul ServerComm}}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Task und Modul EventMessages}}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Task und Modul MachineData}}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Task und Modul CycleTimer}}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Automatic loading}}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Signale hinzuf\IeC {\"u}gen}}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Global.sys}}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces QR-Code mit 192.168.1.2;1025}}{26}{figure.caption.21}
 \addvspace {10\p@ }

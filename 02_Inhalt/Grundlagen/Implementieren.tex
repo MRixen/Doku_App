@@ -2,9 +2,15 @@
 \label{sec:Installation}
 In diesem Kapitel wird die Vorgehensweise erläutert, um die \gls{app} Fast 
 Diagnose mit einer ABB-Steuerung nutzen zu können. Für das Einspielen der 
-entsprechenden Dateien wird Robotstudio 5.61 verwendet. Das gesamte ABB-System 
-ist unter folgendem Link verfügbar: \url{https://github.com/MRixen/Doku_App/}.
+entsprechenden Dateien wird Robotstudio 5.61 verwendet.\\
+Das gesamte ABB-System ist unter folgendem Link verfügbar: \\
+\url{https://github.com/MRixen/Abb-Controller/}.\\
+Das gesamte Android-System ist unter folgendem Link verfügbar: \\
+\url{https://github.com/MRixen/rbc_Diagnose/}.\\
+Die Dokumentation ist unter folgendem Link verfügbar: \\
+\url{https://github.com/MRixen/Doku_App/}
 
+\subsubsection{Vorbereitung}
 Folgende Komponenten müssen in das bestehende ABB-Projekt 
 integriert werden:
 \begin{itemize}
@@ -32,7 +38,7 @@ integriert werden:
 		\caption[Task und Modul MachineData]{Task und Modul MachineData}
 		\label{fig:taskMachineData}
 		\end{figure}
-\item Task und Modul EventMessages (s. \ref{fig:taskCycleTimer})
+\item Task und Modul CycleTimer (s. \ref{fig:taskCycleTimer})
 \begin{figure}[H]
 	\centering
 	\fbox{	
@@ -72,3 +78,19 @@ ergänzt/modifiziert werden:
 Die Buffer, sowie die Variable \textit{clientConnected} müssen global für jede 
 Task verfügbar sein.
 \end{itemize}  
+
+\subsubsection{Verwendung}
+Sobald alle Tasks aktiv sind, muss an dem Netzwerkanschluss der 
+Robotersteuerung ein Wlan-Router angebunden werden. Die bei ABB einzig 
+verwendbare IP-Adresse lautet: \textbf{192.168.1.2} und der Port ist 
+standardmäßig auf \textbf{1025} gesetzt.\\
+Mit Hilfe eines QR-Codes, der die Adressdaten in folgendem Format enthält:\\ 
+\textbf{192.168.1.2;1025} (s. \ref{fig:qrCode}) kann sich nun auf den Port 
+verbunden werden.
+\begin{figure}[H]
+	\centering
+	\fbox{	
+	\includegraphics[width=0.4\textwidth]{03_Grafiken/qrCode.png}}
+	\caption[QR-Code mit 192.168.1.2;1025]{QR-Code mit 192.168.1.2;1025}
+	\label{fig:qrCode}
+\end{figure}

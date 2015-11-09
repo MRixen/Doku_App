@@ -12,10 +12,11 @@ fest vergeben:
 \textbf{\{0...n-1\}:} Machine data mit n aus $\mathbb{N}$ \\
 Dieser Parameter kann erweitert werden. Hierbei muss die App (Android - Klasse 
 MachineData), als 
-auch das Modul (ABB - Modul MachineData) angeasst werden.
+auch das Modul (ABB - Modul MachineData) angepasst werden.
 
 \textbf{\{l\}: Logging} \\
 
+\textbf{\{c\}: CycleTime} \\
 \{c1\}: Cycle time (Aktueller Wert)\\
 \{c2\}: Cycle time (Durchschnittswert)\\
 Diese Parameter können erweitert werden mit z.B. \{c3\}, \{c4\}, etc.
@@ -31,6 +32,7 @@ Doppelpunkt enthalten ist, so muss dieses mit einem führenden Doppelpunkt
 angegeben werden. Ansonsten wird es nicht als, im Satz enthaltenes, Zeichen 
 erkannt. Die Nachricht wird dadurch fehlerhaft dargestellt.
 
+\section{Nachrichtenbeispiele}
 Nachrichtenbeispiele bei der Standardkommunikation sind folgend aufgeführt:
 
 \textbf{Machine data}\\
@@ -44,7 +46,7 @@ werden als \{command\}, beginnend bei 0, durchnummeriert.\\
 Aktuell werden die in \ref{tab:machineData} dargestellten Parameter ausgegeben. 
 Die in der rechten Spalte aufgezeigten Werte sind als Beispiel anzunehmen.
 % Tabelle für Parameter Machine Data
-\begin{table}
+\begin{table}[H]
 \caption{Parameter der Maschinendaten}\label{tab:machineData}
 \renewcommand{\arraystretch}{1.5} 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
@@ -61,13 +63,13 @@ Die in der rechten Spalte aufgezeigten Werte sind als Beispiel anzunehmen.
 \hline 
 \textbf{Produktionsstart} & 15.10.15 \\ 
 \hline 
-\textbf{Serien-Nr.} & 20184 \\ 
+\textbf{Serien-Nr.} & 123456 \\ 
 \hline 
-\textbf{Software-Version} & 20184 \\ 
+\textbf{Software-Version} & 123456 \\ 
 \hline 
-\textbf{Robotertyp} & 20184 \\ 
+\textbf{Robotertyp} & IRB 140 \\ 
 \hline 
-\textbf{Steuerungs-ID} & 20184 \\ 
+\textbf{Steuerungs-ID} & xxx \\ 
 \hline 
 \textbf{IP-Adresse} & 192.168.1.2 \\ 
 \hline 
@@ -77,7 +79,6 @@ Die in der rechten Spalte aufgezeigten Werte sind als Beispiel anzunehmen.
 \hline 
 \end{tabular} 
 \end{table}
-\\[20pt]
 \textbf{Logging}\\
 :l:Gesamtzahl der gefertigten Teile 81; \\
 
@@ -89,6 +90,10 @@ Die in der rechten Spalte aufgezeigten Werte sind als Beispiel anzunehmen.
 :e:1::1::10::1::X::X::X::X; \\
 :e:1::1::17::1::T\_ROB1::X::X::X; \\
 :e:3::28::10::1::63::7::X::X; \\
+
+Das Zeichen X dient als Platzhalter für String-Parameter. Diese können aktuell 
+nicht vollständig gesendet werden, da sonst der zu übertragende String zu viel 
+Zeichen enthält (max. Länge 80 Zeichen). 
 
 
 

@@ -8,9 +8,11 @@ grundsätzliche Kommunikation zuständig - entsprechend des Tasks
 
 \subsubsection{Klasse Receiver}
 Die Klasse \textit{Receiver} ist für das Senden und Empfangen von Daten 
-zuständig. Die grundsätzliche Kommunikation erfolgt in der Klasse NetClient, 
+zuständig. Die grundsätzliche Kommunikation erfolgt in der Klasse 
+\textit{NetClient}, 
 welche innerhalb des Konstruktors (s. \ref{appCode:klasseReceiver} Zeile 1 - 5) 
-als Objekt erzeugt wird. Die Übergabeparameter bestehen aus der IP und dem Port.
+als Objekt erzeugt wird. Die Übergabeparameter bestehen aus der IP-Adresse und 
+dem Port.
 
 Die Klasse Receiver implementiert ein Runnable, sodass innerhalb der Routine 
 run() die Kommunikation mit einem Client abläuft. In Zeile 9 erfolgt der 
@@ -30,7 +32,7 @@ und die Nachricht selbst zu übertragen.
 \input{99_Anhang/Listing_Klasse_Receiver}
 
 \subsubsection{Klasse Events}
-Der Klasse \textit{Events} definiert einen Tab und empfängt/verarbeitet die von 
+Die Klasse \textit{Events} definiert einen Tab und empfängt/verarbeitet die von 
 der Robotersteuerung gesendeten Events (Information, Warnung, Fehler). Die 
 Klasse registriert sich (wie in allen anderen Tab-Klassen auch) in ihrer 
 Methode \textit{onCreate()} auf den Event-Generator, bzw. das Interface 
@@ -43,11 +45,11 @@ Zeichen \textit{e} beinhaltet (s. Zeile 17). Ist dies der Fall so wird der
 String aufgeteilt und dem Objekt \textit{XMLParsing()} übergeben (s. Zeile 20).
 
 Die Klasse \textit{XMLParsing} erzeugt das String-Array 
-\textit{eventDescription\[\]}, das den gesamten Meldungstext 
+$\textit{eventDescription[]}$, das den gesamten Meldungstext 
 beinhaltet. D.h. anhand der Parameter Fehlerdomäne und Fehlernummer erfolgt die 
 Auswahl der xml-Datei (Zeile 30 - 40 verkürzt dargestellt) in welcher der 
 Beschreibungstext für die Meldung hinterlegt ist.\\
-Das Array \textit{eventMessages\[\]} enthält an der Position 1 die 
+Das Array $\textit{eventMessages[]}$ enthält an der Position 1 die 
 Fehlerdomäne, an Position 2 die Fehlernummer und an Position 3 den Fehlertyp. 
 Alle weiteren Positionen beinhalten die Textparameter.
 
@@ -99,10 +101,10 @@ String dem entsprechenden Textfeld übergeben (s. Zeile 19 und 23).
 \input{99_Anhang/Listing_Klasse_CycleTime}
 
 \subsubsection{Klasse Logging}
-Der Klasse \textit{Logging} definiert einen Tab und stellt die 
-Logging-Nachrichten dar, die der User ansonsten auf dem FlexPendant unt Logging 
-sehen würde. Die Klasse 
-registriert sich (wie in allen anderen 
+Die Klasse \textit{Logging} definiert einen Tab und stellt die 
+Logging-Nachrichten dar, die der User ansonsten auf dem FlexPendant unter 
+Logging 
+sehen würde. Die Klasse registriert sich (wie in allen anderen 
 Tab-Klassen auch) in ihrer 
 Methode \textit{onCreate()} auf den Event-Generator, bzw. das Interface 
 \textit{EventListener} (s. \ref{appCode:klasseLogging} Zeile 7 - 8).\\
@@ -123,7 +125,7 @@ Funktion erläutert.
 
 \textbf{MainActivity}\\
 In dieser Klasse werden die Tabs generiert und dargestellt, sowie der 
-Barcode-Reader gestartet und auf dessen Ergbenis gewartet. Ist dieses i.O. so 
+Barcode-Reader gestartet und auf dessen Ergebnis gewartet. Ist dieses i.O. so 
 erfolgt das Starten des Receiver-Threads.
 
 \textbf{BaseData}\\
@@ -152,6 +154,5 @@ gibt eine Rückmeldung an die Klasse \textit{MainActivity} zurück.
 \textbf{CycleTimeDrawThread}\\
 Um die Zykluszeit grafisch darstellen zu können ist diese Klasse hilfreich. 
 Darin enthalten sind Methoden, mit denen einen grafische Ausgabe (Diagramm) 
-erzeugt werden kann.\\
-Aktuell wird die Klasse nicht genutzt.
+erzeugt werden kann. Aktuell wird die Klasse nicht genutzt.
 
