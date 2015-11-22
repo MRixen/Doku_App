@@ -1,100 +1,26 @@
 \section{Nachrichtenaufbau}
 \label{sec:Nachrichtenaufbau}
-Jede Nachricht, die von der ABB-Steuerung gesendet und von der \gls{app} 
-korrekt 
-empfangen werden soll, muss folgendes Format aufweisen:
+Jede Nachricht, die von dem Master-Computer (Raspberry Pi) gesendet und von dem 
+OpenCM-Board korrekt empfangen werden soll, muss folgendes Format aufweisen:
 
-Nachricht = :\{command\}:\{message\};
+Nachricht = \{ID\};\{COMMAND\};\{VALUE\};
 
-Bei der Standardkommunikation sind für \{command\} folgende Parameter bereits 
-fest vergeben:
+Die Werte für \{ID\} sind für den entsprechenden Servomotor bestimmt und ist 
+auf den Wertebereich zwischen 0 - 253 beschränkt.\\
+Die Werte für \{COMMAND\} sind der Tabelle zu entnehmen, die auf folgender 
+Website \url{} zu finden ist. Die wichtigsten Befehle sind zur Übrsicht in 
+\ref{fig:commands} dargestellt.
 
-\textbf{\{0...n-1\}:} Machine data mit n aus $\mathbb{N}$ \\
-Dieser Parameter kann erweitert werden. Hierbei muss die App (Android - Klasse 
-MachineData), als 
-auch das Modul (ABB - Modul MachineData) angepasst werden.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable.jpg}
+	\caption[Wichtige Kommandos]{Wichtige Kommandos}
+	\label{fig:commands}
+\end{figure}
 
-\textbf{\{l\}: Logging} \\
+Der Wert \{VALUE}\ ist zunächst dafür vorgesehen, um den Drehwinkel für den 
+Aktor angeben zu können. Um einen Servomotor mit der ID = 1 auf 55 $[$deg$]$ zu 
+positionieren muss folgender String übertragen werden: \textbf{1;30;55;}
 
-\textbf{\{c\}: CycleTime} \\
-\{c1\}: Cycle time (Aktueller Wert)\\
-\{c2\}: Cycle time (Durchschnittswert)\\
-Diese Parameter können erweitert werden mit z.B. \{c3\}, \{c4\}, etc.
-
-\textbf{\{e\}: Event}s\\
-
-\textbf{\{p\}: Ping}\\
-Dieser Parameter wird zur Überprüfung verwendet, ob der Empfänger noch 
-vorhanden ist. Dies wird in \ref{sec:ChapterABB} erläutert.
-
-Sofern in einer der Nachrichtenkomponenten (\{command\} oder \{message\}) ein 
-Doppelpunkt enthalten ist, so muss dieses mit einem führenden Doppelpunkt 
-angegeben werden. Ansonsten wird es nicht als, im Satz enthaltenes, Zeichen 
-erkannt. Die Nachricht wird dadurch fehlerhaft dargestellt.
-
-\section{Nachrichtenbeispiele}
-Nachrichtenbeispiele bei der Standardkommunikation sind folgend aufgeführt:
-
-\textbf{Machine data}\\
-:0:Multiflex; \\
-:1:20184; \\
-:2:2015; \\
-:3:10.10.15; \\
-
-Die Maschinendaten beinhalten die wichtigsten Informationen über das System und 
-werden als \{command\}, beginnend bei 0, durchnummeriert.\\
-Aktuell werden die in \ref{tab:machineData} dargestellten Parameter ausgegeben. 
-Die in der rechten Spalte aufgezeigten Werte sind als Beispiel anzunehmen.
-% Tabelle für Parameter Machine Data
-\begin{table}[H]
-\caption{Parameter der Maschinendaten}\label{tab:machineData}
-\renewcommand{\arraystretch}{1.5} 
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-\centering
-\begin{tabular}{|p{5cm}|p{5cm}|}
-\hline 
-\textbf{Maschinentyp} & Maxiflex \\ 
-\hline 
-\textbf{Projektnummer} & 20184 \\ 
-\hline 
-\textbf{Herstelljahr} & 2015 \\ 
-\hline 
-\textbf{Werksabnahme} & 10.10.15 \\ 
-\hline 
-\textbf{Produktionsstart} & 15.10.15 \\ 
-\hline 
-\textbf{Serien-Nr.} & 123456 \\ 
-\hline 
-\textbf{Software-Version} & 123456 \\ 
-\hline 
-\textbf{Robotertyp} & IRB 140 \\ 
-\hline 
-\textbf{Steuerungs-ID} & xxx \\ 
-\hline 
-\textbf{IP-Adresse} & 192.168.1.2 \\ 
-\hline 
-\textbf{Sprache} & DE \\ 
-\hline 
-\textbf{Betriebsstunden} & 10.5 \\ 
-\hline 
-\end{tabular} 
-\end{table}
-\textbf{Logging}\\
-:l:Gesamtzahl der gefertigten Teile 81; \\
-
-\textbf{Cycle time}\\
-:c1:2.545; \\
-:c2:2.273; \\
-
-\textbf{Events}\\
-:e:1::1::10::1::X::X::X::X; \\
-:e:1::1::17::1::T\_ROB1::X::X::X; \\
-:e:3::28::10::1::63::7::X::X; \\
-
-Das Zeichen X dient als Platzhalter für String-Parameter. Diese können aktuell 
-nicht vollständig gesendet werden, da sonst der zu übertragende String zu viel 
-Zeichen enthält (max. Länge 80 Zeichen). 
-
-
-
-
+Auf dem übergeorndeten Rechner kann dann eine Regelstruktur implementiert 
+werden, die entsprechende Kommandos an die jeweils beteiligten Aktoren sendet.

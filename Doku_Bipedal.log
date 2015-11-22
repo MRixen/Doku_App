@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.28)  22 NOV 2015 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.28)  22 NOV 2015 20:39
 entering extended mode
-**Doku_Vorlage.tex
-(Doku_Vorlage.tex
+**Doku_Bipedal.tex
+(Doku_Bipedal.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 (01_Vorspann/Dokumentenklasse.tex
@@ -1698,16 +1698,16 @@ Package: glossary-tree 2015/02/03 v4.13 (NLCT)
 ))
 \glswrite=\write4
 \glo@main@file=\write5
-Package glossaries Info: Writing glossary file Doku_Vorlage.glo on input line 2
+Package glossaries Info: Writing glossary file Doku_Bipedal.glo on input line 2
 .
 \glo@acronym@file=\write6
-Package glossaries Info: Writing glossary file Doku_Vorlage.acn on input line 2
+Package glossaries Info: Writing glossary file Doku_Bipedal.acn on input line 2
 .
 )
 (99_Anhang/glossary.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (Doku_Vorlage.aux (02_Inhalt/Kurzfassung.aux)
+ (Doku_Bipedal.aux (02_Inhalt/Kurzfassung.aux)
 (Vorlagen.aux) (02_Inhalt/Einleitung.aux) (02_Inhalt/Grundlagen.aux)
 (02_Inhalt/Ausblick.aux) (02_Inhalt/Anhang.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -1817,7 +1817,7 @@ LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
 
-(Doku_Vorlage.out) (Doku_Vorlage.out)
+(Doku_Bipedal.out) (Doku_Bipedal.out)
 \@outlinefile=\write7
 \c__siunitx_mathsf_int=\count320
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 33.
@@ -1873,7 +1873,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: Option `pageanchor' set `false' on input line 36.
  (02_Inhalt/Titelseite.tex
-<03_Grafiken/logo.jpg, id=43, 1263.72125pt x 584.1825pt>
+<03_Grafiken/logo.jpg, id=47, 1263.72125pt x 584.1825pt>
 File: 03_Grafiken/logo.jpg Graphic file (type jpg)
 
 <use 03_Grafiken/logo.jpg>
@@ -1884,7 +1884,7 @@ Overfull \hbox (84.26999pt too wide) in paragraph at lines 5--8
 [][] 
  []
 
-<03_Grafiken/PseudoImage.jpg, id=44, 1263.72125pt x 584.1825pt>
+<03_Grafiken/PseudoImage.jpg, id=48, 1263.72125pt x 584.1825pt>
 File: 03_Grafiken/PseudoImage.jpg Graphic file (type jpg)
 
 <use 03_Grafiken/PseudoImage.jpg>
@@ -1920,7 +1920,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
- (Doku_Vorlage.toc)
+ (Doku_Bipedal.toc)
 \tf@toc=\write8
 )
 Package babel Info: Redefining ngerman shorthand "|
@@ -1955,10 +1955,6 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              avoid this warning, if you are using a
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
-
-
-LaTeX Warning: Reference `sec:Nachrichtenaufbau' on page 1 undefined on input l
-ine 25.
 
 
 LaTeX Warning: Reference `sec:Programmaufbau' on page 1 undefined on input line
@@ -1997,7 +1993,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- (02_Inhalt/Section1.tex
+ (02_Inhalt/Grundlagen/Testaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2017,7 +2013,7 @@ Overfull \hbox (5.67744pt too wide) in paragraph at lines 40--40
  []
 
 
-<03_Grafiken/Grundlagen/Testaufbau/Komponenten.jpg, id=81, 2055.68pt x 1541.76p
+<03_Grafiken/Grundlagen/Testaufbau/Komponenten.jpg, id=87, 2055.68pt x 1541.76p
 t>
 File: 03_Grafiken/Grundlagen/Testaufbau/Komponenten.jpg Graphic file (type jpg)
 
@@ -2038,31 +2034,74 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 ])
-(02_Inhalt/Section2.tex
+(02_Inhalt/Grundlagen/Programmierung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
 
-LaTeX Warning: Reference `lst:OpenCMcode' on page 3 undefined on input line 13.
+LaTeX Warning: Reference `tab:CommandsDynamixel' on page 3 undefined on input l
+ine 20.
 
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 16.
+LaTeX Warning: Reference `tab:baudrate' on page 3 undefined on input line 24.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+[3 <./03_Grafiken/Grundlagen/Testaufbau/Komponenten.jpg>]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 30.
+
 ("C:\Program Files\MikTex\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
- [3 <./03_Grafiken/Grundlagen/Testaufbau/Komponenten.jpg>]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 26.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 31.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 79.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 79.
+ [4])
+(02_Inhalt/Grundlagen/Nachrichtenaufbau.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+<03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable.jpg, id=160, 584.93532p
+t x 453.19313pt>
+File: 03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable.jpg Graphic file (
+type jpg)
+
+<use 03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable.jpg>
+Package pdftex.def Info: 03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable
+.jpg used on input line 16.
+(pdftex.def)             Requested size: 362.77525pt x 281.08055pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 20.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 20.
+ [5]
+! Too many }'s.
+l.21 Der Wert \{VALUE}
+                      \ ist zunächst dafür vorgesehen, um den Drehwinkel f...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
 )))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 63.
@@ -2072,7 +2111,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 63.
- [4] (02_Inhalt/Ausblick.tex
+ [6 <./03_Grafiken/Grundlagen/Nachrichtenaufbau/CommandsTable.jpg>]
+(02_Inhalt/Ausblick.tex
 Kapitel 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2087,12 +2127,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 64.
- [5
+ [7
 
 
 
 ]
-No file Doku_Vorlage.bbl.
+No file Doku_Bipedal.bbl.
 (02_Inhalt/Anhang.tex
 
 Class scrreprt Warning: \float@listhead detected!
@@ -2112,7 +2152,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 31.
-(Doku_Vorlage.lol)
+(Doku_Bipedal.lol)
 \tf@lol=\write9
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
@@ -2136,7 +2176,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- (Doku_Vorlage.lof)
+ (Doku_Bipedal.lof)
 \tf@lof=\write10
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 33.
@@ -2153,7 +2193,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 33.
- (Doku_Vorlage.lot)
+ (Doku_Bipedal.lot)
 \tf@lot=\write11
 )
 Package babel Info: Redefining ngerman shorthand "|
@@ -2174,26 +2214,26 @@ This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
-(Doku_Vorlage.aux (02_Inhalt/Kurzfassung.aux) (Vorlagen.aux)
+(Doku_Bipedal.aux (02_Inhalt/Kurzfassung.aux) (Vorlagen.aux)
 (02_Inhalt/Einleitung.aux) (02_Inhalt/Grundlagen.aux) (02_Inhalt/Ausblick.aux)
 (02_Inhalt/Anhang.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `Doku_Vorlage.out' has not changed.
-(rerunfilecheck)             Checksum: 5633870E8B25A30C921A65B6BBB9A161;559.
+Package rerunfilecheck Info: File `Doku_Bipedal.out' has not changed.
+(rerunfilecheck)             Checksum: AD3A7153EB5842AE690AB21EEFC2E82B;628.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31473 strings out of 493698
- 563971 string characters out of 3146003
- 836393 words of memory out of 3000000
- 34088 multiletter control sequences out of 15000+200000
- 84364 words of font info for 72 fonts, out of 3000000 for 9000
+ 31548 strings out of 493698
+ 565530 string characters out of 3146003
+ 837534 words of memory out of 3000000
+ 34128 multiletter control sequences out of 15000+200000
+ 84686 words of font info for 73 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 60i,13n,80p,10435b,2495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,80p,10435b,2430s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:hmi} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -2202,19 +2242,19 @@ placed by a fixed one
 
 {C:/Program Files/MikTex/fonts/enc/dvips/fontname/8r.enc}{C:/Program Files/MikT
 ex/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MikTex/fonts/enc/dvips/lm/lm-
-ts1.enc}<C:/Program Files/MikTex/fonts/type1/public/eurosym/feybr10.pfb><C:/Pro
-gram Files/MikTex/fonts/type1/public/eurosym/feymr10.pfb><C:/Program Files/MikT
-ex/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MikTex/f
-onts/type1/public/lm/lmbx12.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/
-lmr12.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/lmr6.pfb><C:/Program F
-iles/MikTex/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MikTex/fonts/typ
-e1/public/lm/lmro12.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/lmss10.p
-fb><C:/Program Files/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Program File
-s/MikTex/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MikTex/fonts/type
-1/urw/courier/ucrr8a.pfb>
-Output written on Doku_Vorlage.pdf (11 pages, 1020099 bytes).
+rm.enc}{C:/Program Files/MikTex/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files
+/MikTex/fonts/type1/public/eurosym/feybr10.pfb><C:/Program Files/MikTex/fonts/t
+ype1/public/eurosym/feymr10.pfb><C:/Program Files/MikTex/fonts/type1/public/ams
+fonts/latxfont/lcircle1.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/lmbx
+12.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/lmr12.pfb><C:/Program Fil
+es/MikTex/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MikTex/fonts/type1/p
+ublic/lm/lmri12.pfb><C:/Program Files/MikTex/fonts/type1/public/lm/lmro12.pfb><
+C:/Program Files/MikTex/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MikT
+ex/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MikTex/fonts/type1/urw/
+courier/ucrb8a.pfb><C:/Program Files/MikTex/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Doku_Bipedal.pdf (13 pages, 1168779 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
